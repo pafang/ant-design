@@ -27,7 +27,11 @@ Form.create = (o = {}) => {
       };
     },
     render() {
-      return <Component {...this.props} />;
+      const withRef = {};
+      if (options && options.withRef) {
+        withRef.ref = 'formWrappedComponent';
+      }
+      return <Component {...this.props} {...withRef} />;
     },
   }));
 };

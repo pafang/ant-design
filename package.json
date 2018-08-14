@@ -1,9 +1,9 @@
 {
-  "name": "antd",
-  "version": "1.11.5",
+  "name": "antd-ie",
+  "version": "1.0.0",
   "title": "Ant Design",
   "description": "An enterprise-class UI design language and React-based implementation",
-  "homepage": "http://ant.design/",
+  "homepage": "https://github.com/pafang/ant-design",
   "keywords": [
     "ant",
     "design",
@@ -20,7 +20,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ant-design/ant-design"
+    "url": "https://github.com/pafang/ant-design"
   },
   "bugs": {
     "url": "https://github.com/ant-design/ant-design/issues"
@@ -139,7 +139,6 @@
     "test": "npm run lint && npm run dist && npm run jest",
     "jest": "jest",
     "pre-publish": "node ./scripts/prepub",
-    "prepublish": "antd-tools run guard",
     "pub": "antd-tools run update-self && antd-tools run pub --npm-tag=1.x",
     "authors": "git log --format='%aN <%aE>' | sort -u | grep -v 'users.noreply.github.com' | grep -v 'gitter.im' | grep -v '.local>' | grep -v 'alibaba-inc.com' | grep -v 'alipay.com' | grep -v 'taobao.com' > AUTHORS.txt"
   },
@@ -160,8 +159,5 @@
     ],
     "scriptPreprocessor": "<rootDir>/node_modules/webpack-babel-jest",
     "testDirectoryName": "tests"
-  },
-  "pre-commit": [
-    "lint"
-  ]
+  }
 }
